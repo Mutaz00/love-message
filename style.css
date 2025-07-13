@@ -1,0 +1,167 @@
+body {
+  background: url("my-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding-bottom: 100px;
+  margin: 0;
+  color: #340234;
+  position: relative;
+  font-size: 22px; /* حجم الخط الأساسي */
+  line-height: 1.8;
+}
+
+#heartCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+h1, h2 {
+  color: #340234;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e91e63;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ad1457;
+}
+
+#no {
+  position: relative;
+}
+
+/* كود التيرمنال */
+.terminal {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.4);
+  overflow: hidden;
+}
+
+.title-bar {
+  background-color: #2c2c2c;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #ff605c; }
+.yellow { background-color: #ffbd44; }
+.green { background-color: #00ca4e; }
+
+.title {
+  margin-left: auto;
+  color: #ccc;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.code {
+  padding: 20px;
+  font-size: 18px;
+  color: #b5f4a5;
+  white-space: pre-wrap;
+  text-align: left;
+  direction: ltr;
+}
+
+.keyword {
+  color: #9cdcfe;
+  font-weight: bold;
+}
+
+.number {
+  color: #ff9dd9;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 20px;
+  color: #340234;
+}
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+.decor {
+  position: fixed;
+  font-size: 32px;
+  z-index: 1;
+  animation: float 4s ease-in-out infinite;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+body.night {
+  background: linear-gradient(to bottom, #1a0024, #ffb6c1);
+}
+
+body.day {
+  background: linear-gradient(to bottom, #fff0f5, #ffe4ec);
+}
+
